@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import axios from "axios"
+// import React,{useEffect} from "react";
+import Browse from "./components/Browse";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Details from "./components/Details";
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <BrowserRouter>
+    <div className="bg-blue-300 flex justify-center w-100 h-[100vh]">
+      <Routes>
+        <Route exact path="/" element={ <Browse/>}/>
+        <Route exact path="/details" element={ <Details/>}/>
+      </Routes>
+     
     </div>
+    </BrowserRouter>
+    </>
   );
 }
 
