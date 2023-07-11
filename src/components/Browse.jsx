@@ -29,7 +29,7 @@ const Browse = () => {
         <div>
           <div className="font-bold tracking-wide mx-5 mt-5 text-slate-800">Popular Dishes</div>
           <div className="flex justify-center border-b-2  mb-5">
-          <div className="flex mb-5  mt-5  w-[20rem] overflow-x-auto hide-scroll-bar space-x-4">
+          <div className="flex mb-5  mt-5  w-[20rem] [375px]:w-[27rem] overflow-x-auto hide-scroll-bar space-x-4">
             {data?.popularDishes?.map((data,i)=>{
               return    <><section className="relative flex-shrink-0 ml-5 rounded-full border-2 border-yellow-400">
               <span><img src={data.image} className="bg-yellow-300 h-14 w-14 rounded-full border-2 border-white" alt=""
@@ -49,20 +49,20 @@ const Browse = () => {
         <div>
         
           <div className="flex justify-between mb-3 mx-5">
-            <div className="font-bold tracking-wide  text-slate-800 text-lg">Recomended</div>
+            <div className="font-bold tracking-wide  text-slate-800 text-xl">Recomended</div>
             <button className="bg-slate-900 text-white text-[0.6rem] px-4 py-1 rounded-md">Menu</button></div>
           <div className="mx-5 flex flex-col space-y-2 h-[20rem] overflow-y-auto hide-scroll-bar">
             {data?.dishes?.map((dat,i)=>{
               return <><div key={i} className=" flex py-4 justify-between">
               <div className="">
-              <div className="flex gap-2 font-medium text-sm"><div>{dat?.name}</div><div className="flex"><img className="w-[0.6rem] h-[0.6rem] mt-2" alt="veg" src="veg.jpg"/></div><div><span className="bg-green-400 text-white px-1 rounded-sm text-[0.56rem]">{dat.rating}</span></div></div>
+              <div className="flex gap-2 font-semibold text-md mb-1"><div>{dat?.name}</div><div className="flex"><img className="w-[0.6rem] h-[0.6rem] mt-[0.66rem]" alt="veg" src="veg.jpg"/></div><div><span className="bg-green-400 text-white px-1 rounded-sm text-[0.56rem]">{dat.rating}</span></div></div>
               <div className="flex"><div className="flex gap-2 ">
               {dat?.equipments?.map((d,index)=>{
                  return <span key={index} className="text-[0.46rem]">{d}</span>
               })}
                 </div>
               <div className=" border-l border-slate-300 flex flex-col px-4"><span className="text-[0.5rem] font-bold">Ingredients</span><Link to="/details" className="text-yellow-500 font-bold text-[0.6rem]">View list</Link></div></div>
-              <div className="text-[0.54rem] leading-tight mt-2">{dat.description}</div>
+              <div className="text-[0.7rem] w-[13rem] leading-tight mt-2 text-slate-400 font-base">{dat.description}</div>
               </div>
               <div>
                 <div className=" w-[6rem] h-[4rem] relative rounded-lg">
@@ -73,15 +73,15 @@ const Browse = () => {
               </div>
               <div key={i} className=" flex py-4 justify-between">
               <div className="">
-              <div className="flex gap-2 font-medium text-sm"><div>{dat?.name}</div><div><img className="w-[0.6rem] h-[0.6rem] mt-2" alt="veg" src="veg.jpg"/></div><div><span className="bg-green-400 text-white px-1 rounded-sm text-[0.56rem]">{dat.rating}</span></div></div>
+              <div className="flex gap-2 font-semibold text-md mb-1"><div>{dat?.name}</div><div><img className="w-[0.6rem] h-[0.6rem] mt-[0.66rem]" alt="veg" src="veg.jpg"/></div><div><span className="bg-green-400 text-white px-1 rounded-sm text-[0.56rem]">{dat.rating}</span></div></div>
               <div className="flex"><div className="flex gap-2">
               {dat?.equipments?.map((d,index)=>{
                  return <span key={index} className="text-[0.46rem]">{d}</span>
               })}
                 </div>
               <div className=" border-l border-slate-300 flex flex-col px-4"><span className="text-[0.5rem] font-bold">Ingredients</span><div className="text-yellow-500 font-bold text-[0.6rem]">View list</div></div></div>
-              <div className="text-[0.54rem] leading-tight mt-2">{dat.description}</div>
-              </div>
+              <div className="text-[0.7rem] w-[13rem] leading-tight mt-2 text-slate-400 font-base">{dat.description}</div>
+              </div> 
               <div>
                 <div className=" w-[6rem] h-[4rem] relative rounded-lg">
                  <img className="w-[6rem] h-[4rem] object-cover bg-red-700 rounded-lg" src={dat.image} alt="food"/>

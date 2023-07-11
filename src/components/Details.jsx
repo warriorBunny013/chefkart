@@ -16,8 +16,8 @@ const Details = () => {
             <div className='ml-5 mt-5  flex justify-between'>
             <div className=' pb-10 '>
                 <div className=''>
-            <div className='flex gap-2'><span className='text-xl whitespace-nowrap font-bold'>{details?.name}</span><div className='mt-1'><span className='bg-green-400 text-white px-1 rounded-sm text-[0.56rem]'>4.2</span></div></div>
-            <div className='text-[0.6rem] text-slate-500 tracking-wide'>Mughlai Masala is a style of cookery developed in the indian Subcontinent by the imperial kitchens of the Mughal Empire.</div>
+            <div className='flex gap-2'><span className='text-xl whitespace-nowrap font-bold mb-2'>{details?.name}</span><div className='mt-1'><span className='bg-green-400 text-white px-1 rounded-sm text-[0.56rem]'>4.2</span></div></div>
+            <div className='text-[0.7rem] tracking-wider text-slate-400 font-medium'>Mughlai Masala is a style of cookery developed in the indian Subcontinent by the imperial kitchens of the Mughal Empire.</div>
             </div>
             <div className='text-xs pb-5 pt-3 border-b-2 font-medium'>{details?.timeToPrepare}</div>
             </div>
@@ -25,12 +25,12 @@ const Details = () => {
 
             </div>
             <div className='mx-5  pb-5 border-b flex flex-col'>
-                <span className='text-lg font-bold tracking-wide'>Ingredients</span>
-                <span className='text-slate-500 tracking-wide text-[0.6rem]'>For 2 people</span>
+                <span className='text-lg font-bold tracking-wide mb-1'>Ingredients</span>
+                <span className='text-[0.7rem] tracking-wider text-slate-400 font-medium'>For 2 people</span>
             </div>
             <div className='pt-3 mx-5 '>
                 <div className='font-medium text-sm'>Vegetables(05)</div>
-                <div className='flex justify-between text-[0.75rem] text-slate-800'>
+                <div className='flex justify-between text-[0.75rem] text-slate-600'>
                     <div className='flex flex-col gap-1 mt-2'>
                         {details?.ingredients?.vegetables?.map((data,i)=>{
                             return <div key={i}>{data.name}</div>
@@ -47,7 +47,7 @@ const Details = () => {
            
             <div className='pt-5 mx-5 '>
                 <div className='font-medium text-sm'>Spices(10)</div>
-                <div className='flex justify-between text-[0.75rem] text-slate-800'>
+                <div className='flex justify-between text-[0.75rem] text-slate-600'>
                     <div className='flex flex-col gap-1 mt-2'>
                     {details?.ingredients?.spices.map((data,i)=>{
                             return <div key={i}>{data.name}</div>
@@ -65,10 +65,10 @@ const Details = () => {
             
             <div className=' mx-5 '>
                 <div className='text-lg font-bold tracking-wide py-4'>Appliances</div>
-                <div className='flex gap-4 text-[0.6rem]'>
+                <div className='flex gap-6 text-[0.6rem] '>
                 {details?.ingredients?.appliances?.map((data,i)=>{
                             return  <div key={i} className='bg-slate-200 overflow-auto object-cover px-4 flex flex-col justify-between py-2'>
-                            <img src={data.name+".png"} alt='appliances'/>
+                            <img src="refrigerator.png" className="h-[7rem]" alt='appliances'/>
                             <span className="">{data.name}</span>
                         </div>
                         })}
