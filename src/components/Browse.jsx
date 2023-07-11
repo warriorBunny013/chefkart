@@ -10,7 +10,7 @@ const Browse = () => {
 
   console.log(data)
     return (
-        <div className="bg-white w-[27rem] h-[39em] ">
+        <div className="bg-white w-[27rem] h-[45rem] ">
         <div className=" px-10 py-4 font-medium tracking-wide">Select Dishes</div>
         <div>
           <div className="bg-slate-800 h-10 pt-5">
@@ -51,7 +51,7 @@ const Browse = () => {
           <div className="flex justify-between mb-3 mx-5">
             <div className="font-bold tracking-wide  text-slate-800 text-lg">Recomended</div>
             <button className="bg-slate-900 text-white text-[0.6rem] px-4 py-1 rounded-md">Menu</button></div>
-          <div className="mx-5 flex flex-col space-y-2 h-[15rem] overflow-y-auto hide-scroll-bar">
+          <div className="mx-5 flex flex-col space-y-2 h-[20rem] overflow-y-auto hide-scroll-bar">
             {data?.dishes?.map((dat,i)=>{
               return <><div key={i} className=" flex py-4 justify-between">
               <div className="">

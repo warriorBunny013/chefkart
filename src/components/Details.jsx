@@ -11,7 +11,7 @@ const Details = () => {
   
     console.log(details)
     return (
-        <div className='bg-white w-[27rem] h-[39em]'>
+        <div className='bg-white w-[27rem] h-[45em]'>
             <Link to="/" className='px-5 py-4 flex justify-between font-medium font-mono tracking-wide'>{"<"}</Link>
             <div className='ml-5 mt-5  flex justify-between'>
             <div className=' pb-10 '>
