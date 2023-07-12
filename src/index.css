@@ -7,9 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* *{
+*{
   overflow: none;
-} */
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -22,4 +22,11 @@ code {
 }
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
+}
+.glass-body{
+  background: rgba(6, 0, 0, 0.46);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
 }
