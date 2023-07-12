@@ -10,18 +10,18 @@ const Browse = () => {
 
   console.log(data)
     return (
-        <div className="bg-white w-[27rem] h-[45rem] ">
+        <div className="relative bg-white  w-[27rem] h-[45rem] ">
         <div className="py-4 px-5 font-medium tracking-wide flex"><img className="w-[0.4rem] mt-[0.45rem] mr-[1.5rem] h-[0.7rem]" src="leftarrow.png" alt="arrow"/><span>Select Dishes</span></div>
         <div>
           <div className="bg-slate-800 h-10 pt-5">
-            <div className="flex bg-white shadow-md justify-between text-slate-800 font-semibold mx-5  px-4 py-5 rounded-md">
-              <div className="flex">
+            <div className="flex bg-white shadow-md justify-center text-slate-800 font-semibold mx-5  px-4 py-5 rounded-md">
+              <div className="flex border-r pr-4">
                 <img className="w-[0.8rem] h-[0.8rem] mt-[0.1rem] mr-[0.4rem]" alt="calender" src="calender.png"/>
                 <span className="text-[0.7rem]">21 May 2021</span>
                 
                 </div>
               
-                <div className="flex">
+                <div className="flex pl-4">
                 <img className="w-[0.8rem] h-[0.8rem] mt-[0.1rem] mr-[0.4rem]" alt="clock" src="alarm.png"/>
                 <span className="text-[0.7rem]">10:30 Pm-12:30 Pm</span>
                 
@@ -67,7 +67,7 @@ const Browse = () => {
         <div>
         
          
-          <div className="mx-5 flex flex-col pt-4 border-t-2  h-[20rem] overflow-y-auto hide-scroll-bar">
+          <div className="mx-5 flex flex-col pt-4 border-t-2  h-[24rem] overflow-y-auto hide-scroll-bar">
           <div className="flex justify-between">
             <div className="font-bold tracking-wide flex  text-slate-800 text-lg">
               <span>Recommended</span>
@@ -148,6 +148,14 @@ const Browse = () => {
             
           </div>
           
+        </div>
+        <div className="bg-slate-900 py-2 px-4 rounded-lg text-white flex  justify-between fixed bottom-10 min-w-[20rem]  mx-4">
+          <div className="flex">
+          <img className="w-[1rem] h-[1rem] mt-[0.1rem] mr-2" src="fastfood.png" alt="klsnf" />
+         <div className="text-[0.8rem]">3 food items selected</div>
+          </div>
+          
+         <img className="w-[1rem] h-[0.6rem] mt-1" src="whitearrow.png" alt="mkasnf" />
         </div>
       </div>
     );
