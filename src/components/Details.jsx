@@ -17,7 +17,7 @@ const Details = () => {
             <div className=' '>
                 <div className=''>
             <div className='flex gap-2'><span className='text-xl whitespace-nowrap font-bold mb-2'>{details?.name}</span><div className='mt-1'><span className='bg-green-400 text-white px-1 rounded-sm text-[0.4rem]'>4.2</span></div></div>
-            <div className='text-[0.5rem]  tracking-wide text-slate-300 '>Mughlai Masala is a style of cookery developed in the indian Subcontinent by the imperial kitchens of the Mughal Empire.</div>
+            <div className='text-[0.5rem]  tracking-wide text-slate-400 '>Mughlai Masala is a style of cookery developed in the indian Subcontinent by the imperial kitchens of the Mughal Empire.</div>
             </div>
             <div className='text-xs pb-5 pt-3 border-b-2 flex font-medium'>
                 <img alt="clock" className="w-[0.7rem] h-[0.7rem] mt-[0.2rem] mr-2" src="clock.png" />
