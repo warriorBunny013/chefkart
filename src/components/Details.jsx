@@ -28,7 +28,7 @@ const Details = () => {
             {/* <div className="bg-blue-400 rounded-full w-[20rem] h-[20rem]"></div> */}
             <div className="relative">
                <img className="max-h-[20rem] max-w-[10rem]" src='food.png' alt='details' />
-               <div className="opacity-25 bg-yellow-200 absolute -top-10  h-[14rem] w-[14rem] rounded-full"></div>
+               <div className="opacity-25 bg-yellow-100 absolute -top-10  h-[14rem] w-[14rem] rounded-full"></div>
                 
             </div>
             
