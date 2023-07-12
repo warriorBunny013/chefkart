@@ -16,13 +16,13 @@ const Browse = () => {
           <div className="bg-slate-800 h-10 pt-5">
             <div className="flex bg-white shadow-md  justify-between text-slate-800 font-semibold mx-5  px-4 py-5 rounded-md">
               <div className="flex">
-                <img className="w-[0.8rem] h-[0.8rem] mt-[0.2rem] mr-[0.4rem]" alt="calender" src="calender.png"/>
+                <img className="w-[0.8rem] h-[0.8rem] mt-[0.1rem] mr-[0.4rem]" alt="calender" src="calender.png"/>
                 <span className="text-[0.7rem]">21 May 2021</span>
                 
                 </div>
               
                 <div className="flex">
-                <img className="w-[0.8rem] h-[0.8rem] mt-[0.2rem] mr-[0.4rem]" alt="clock" src="alarm.png"/>
+                <img className="w-[0.8rem] h-[0.8rem] mt-[0.1rem] mr-[0.4rem]" alt="clock" src="alarm.png"/>
                 <span className="text-[0.7rem]">10:30 Pm-12:30 Pm</span>
                 
                 </div>
@@ -38,7 +38,7 @@ const Browse = () => {
         <div>
           <div className="font-bold tracking-wide mx-5 mt-5  text-sm text-slate-800">Popular Dishes</div>
           <div className="flex justify-center  ">
-          <div className="flex mb-5  mt-2  max-w-[27rem]  overflow-x-auto hide-scroll-bar space-x-4">
+          <div className="flex mb-5  mt-2  max-w-[27rem] bg-white overflow-x-auto hide-scroll-bar space-x-4">
             {data?.popularDishes?.map((data,i)=>{
               return    <><section className="relative flex-shrink-0 ml-5 rounded-full border-2 border-yellow-400">
               <span className="relative ">

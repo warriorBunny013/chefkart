@@ -11,8 +11,8 @@ const Details = () => {
   
     console.log(details)
     return (
-        <div className='bg-white w-[27rem] h-[45em]'>
-            <Link to="/" className='px-5 py-4 flex justify-between font-medium font-mono tracking-wide'><img className="w-[0.4rem] mt-[0.45rem] mr-[1.5rem] h-[0.7rem]" src="leftarrow.png" alt="arrow"/></Link>
+        <div className='bg-white overflow-hidden w-[27rem] h-[45em]'>
+            <Link to="/" className='px-5 py-4 flex justify-between tracking-wide'><img className="w-[0.4rem] mt-[0.45rem] mr-[1.5rem] h-[0.7rem]" src="leftarrow.png" alt="arrow"/></Link>
             <div className='ml-5 mt-5  flex justify-between'>
             <div className=' '>
                 <div className=''>
