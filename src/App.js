@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <div className="bg-blue-300 flex justify-center w-100 h-[100vh]">
+    <div className="bg-slate-800 flex justify-center w-100 h-[100vh]">
       <Routes>
         <Route exact path="/" element={ <Browse/>}/>
         <Route exact path="/details" element={ <Details/>}/>
